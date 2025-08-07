@@ -81,9 +81,7 @@
             <button class="tab-btn" data-tab="scanner">
                 <i class="fas fa-camera"></i> Scanner
             </button>
-            <button class="tab-btn" data-tab="receipts">
-                <i class="fas fa-receipt"></i> Receipts
-            </button>
+            
         </div>
 
         <!-- Add Product Tab -->
@@ -217,82 +215,7 @@
         </div>
 
         <!-- Receipts Tab -->
-        <div class="tab-content" id="receipts">
-            <h2>Receipt System</h2>
-            <div class="receipt-generator">
-                <div class="form-group">
-                    <label for="receipt-products">Select Products for Receipt:</label>
-                    <div id="receipt-products-list" class="receipt-products-list">
-                        <p>No products available. Add products first.</p>
-                    </div>
-                </div>
-                
-                <div class="receipt-details">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="receipt-customer">Customer Name</label>
-                            <input type="text" id="receipt-customer">
-                        </div>
-                        <div class="form-group">
-                            <label for="receipt-date">Date</label>
-                            <input type="date" id="receipt-date">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="business-name">Business Name</label>
-                            <input type="text" id="business-name" placeholder="Your Business Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="business-address">Business Address</label>
-                            <input type="text" id="business-address" placeholder="123 Main St, City, State">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="tax-rate">Tax Rate (%)</label>
-                            <input type="number" id="tax-rate" step="0.01" min="0" max="100" value="8.25">
-                        </div>
-                        <div class="form-group">
-                            <label for="discount-amount">Discount ($)</label>
-                            <input type="number" id="discount-amount" step="0.01" min="0" value="0">
-                        </div>
-                    </div>
-                    
-                    <div class="receipt-actions-top">
-                        <button id="generate-receipt" class="btn btn-primary">
-                            <i class="fas fa-receipt"></i> Generate Receipt
-                        </button>
-                        <button id="save-receipt" class="btn btn-secondary" style="display: none;">
-                            <i class="fas fa-save"></i> Save Receipt
-                        </button>
-                        <button id="view-saved-receipts" class="btn btn-secondary">
-                            <i class="fas fa-history"></i> View Saved Receipts
-                        </button>
-                    </div>
-                </div>
-
-                <div id="receipt-preview" class="receipt-preview" style="display: none;">
-                    <h3>Receipt Preview</h3>
-                    <div id="receipt-content"></div>
-                    <div class="receipt-actions">
-                        <button id="print-receipt" class="btn btn-primary">
-                            <i class="fas fa-print"></i> Print Receipt
-                        </button>
-                        <button id="download-receipt" class="btn btn-secondary">
-                            <i class="fas fa-download"></i> Download PDF
-                        </button>
-                        <button id="email-receipt" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Email Receipt
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        
     <!-- Product Edit Modal -->
     <div id="edit-modal" class="modal" style="display: none;">
         <div class="modal-content">
